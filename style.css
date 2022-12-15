@@ -8,8 +8,9 @@
  /* selector */
 body{
     background-color: rgb(20, 20, 98); /* propriedade */
-    font-family: arial;
+    font-family: 'Bungee Shade', cursiva;
     background-size: cover;
+    
 }
 
 
@@ -22,7 +23,7 @@ header{
 
 
 .menu /* propridade */ {
-   background-color: white; 
+   background-color: rgba(227, 227, 227, 0.881); 
    position: fixed;
    width: 100%;
 top: 0;
@@ -31,6 +32,10 @@ top: 0;
 
 a{
 text-decoration: none;
+font-family: 'Rubik Vinyl', cursivo;
+color: rgb(0, 0, 0);
+font-size: 20px;
+font-weight: 700;
 }
 a:hover{
     text-decoration: underline;
@@ -49,31 +54,94 @@ display: block;
     display: flex;
     justify-content: space-around;
 }
+.site-title{
+    margin-top: -29vh;
+    margin-bottom: 10px;
+}
+
+.site-subtitle{
+    margin-top: -6vh;
+}
 
 .site-title, .site-subtitle{
     text-align: center;
     color: whitesmoke;
     font-size: 30px;
+
+}
+
+.site-title{
+    font-size: 4em;
+    font-family: 'Rubik Vinyl', cursivo;
+
 }
 
 
 .site-subtitle{
-    font-style: italic;
+    font-family: 'Bungee Shade', cursiva;
     padding: 20px;
 }
 
 .img-portfólio{
-    width: 30vh;
-    height: 20vh;
+    width: 240px;
+    height: 180px;
 }
 /* breakpoint */
 /* se a tela estiver pelo menos 400px vai carregar este estilo */
-@media (min-width: 400px){
+
+
+.portfólio h2{
+    color: whitesmoke;
+}
+.portfólio{
+    padding: 2em;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+    color: white;
+    margin-top: -10em;
+    height: 100vh;
+}
+
+ .portfólio .grid{
+    display: grid;
+    gap: 2em;
+}
+
+
+@media (min-width: 560px){
+    .portfólio .grid{
+ 
+        grid-template-columns: 240px 240px;
+    }
+}
+
+@media (min-width: 880px){
+    .portfólio .grid{
+ 
+        grid-template-columns: repeat(3, 260px);
+        display: grid;
+        justify-content: center;
+    }
+}
+
+.portfólio figure{
+    text-align: center;
+}
+
+
+
+@media (max-width: 768px){
     body{
         font-size: 14px;
         background-color: black;
     }
+    .site-title{
+        font-size: 2em;
+        margin-top: 9vh;
+    }
 }
+
+
 /* @media (min-width: 600px){
     body{
         font-size: 18px;
