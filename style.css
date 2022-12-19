@@ -26,7 +26,7 @@ header{
    background-color: rgba(227, 227, 227, 0.881); 
    position: fixed;
    width: 100%;
-top: 0;
+   top: 0;
 }
 
 
@@ -108,10 +108,16 @@ display: block;
 }
 
 
+.img-portfólio:hover{
+    transform: scale(1.2);
+    transition: transform 500ms;
+}
+
 @media (min-width: 560px){
     .portfólio .grid{
  
         grid-template-columns: 240px 240px;
+
     }
 }
 
@@ -123,6 +129,8 @@ display: block;
         justify-content: center;
     }
 }
+
+
 
 .portfólio figure{
     text-align: center;
@@ -139,6 +147,15 @@ display: block;
         font-size: 2em;
         margin-top: 9vh;
     }
+
+
+    .SVGG{
+        margin-top: 19em;
+        color: rgb(255, 255, 255);
+    
+        font-size: 39px;
+    }
+  
 }
 
 
@@ -158,3 +175,13 @@ display: block;
     background-color: brown;
     }
 } */
+
+
+
+
+.contato{
+  margin-top: 7em;
+    color: rgb(255, 255, 255);
+
+    font-size: 39px;
+}
